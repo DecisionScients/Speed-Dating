@@ -1,9 +1,10 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+![Logo of the project](https://raw.githubusercontent.com/DecisionScients/Speed-Dating/master/logo.png)
 
 # Speed Dating
 > Analysis and Predictive Modeling of Mate Selection in Speed Dating
 
 What can speed dating tell us about mate selection and partnership in modern Western society? What are the dyadic phenomena manifest during mate selection? What are the characteristics and the relationships among them that indicate a partnership?
+
 
 ## Installing / Getting started
 
