@@ -1,0 +1,43 @@
+# Exploratory Data Analysis
+```{python 02_eda_, echo=T, eval=T}
+```
+
+## Get Data
+```{python 02_eda_get_data, echo=T, eval=T}
+from load_d8a import LoadD8A
+raw = LoadD8A()
+df = raw.load()
+```
+
+## Data Summary
+### Qualitative Data
+```{python 02_eda_qual_summary, echo=T, eval=T}
+from analysis import Describe
+d = Describe(df)
+df_qual = df.select_dtypes(include=['object'])
+df_qual_desc = d.qual(df_qual)
+```
+
+`r kfigr::figr(label = "02_eda_qual_summary_tbl", prefix = TRUE, link = TRUE, type="Table")`: Qualitative Variable Descriptions
+```{r 02_eda_qual_summary_tbl, echo=F, eval=T}
+df_qual_desc <- py$df_qual_desc
+rownames(df_qual_desc) <- NULL
+knitr::kable(df_qual_desc, digits = 5, format.args = list(big.mark = ",")) %>%
+ kableExtra::kable_styling(bootstrap_options = c("hover", "condensed", "responsive"), full_width = T, position = "center")
+```
+
+
+### Quantitative Data
+```{python 02_eda_quant_summary, echo=T, eval=T}
+df_quant = df.select_dtypes(include=['number'])
+df_quant_desc = d.quant(df_quant)
+
+```
+
+`r kfigr::figr(label = "02_eda_quant_summary_tbl", prefix = TRUE, link = TRUE, type="Table")`: Quantitative Variable Descriptions
+```{r 02_eda_quant_summary_tbl, echo=F, eval=T}
+df_quant_desc <- py$df_quant_desc
+rownames(df_quant_desc) <- NULL
+knitr::kable(df_quant_desc, digits = 5, format.args = list(big.mark = ",")) %>%
+ kableExtra::kable_styling(bootstrap_options = c("hover", "condensed", "responsive"), full_width = T, position = "center")
+```

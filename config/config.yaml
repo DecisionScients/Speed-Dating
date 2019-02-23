@@ -1,0 +1,11 @@
+modules:
+  data_module: ../src/data/read.py
+  analysis_module: ../src/eda/analysis.py
+  feature_module: ../src/features/build_features.py
+  train_module: ../src/models/train_model.py
+  predict_module: ../src/models/predict_model.py
+  visualize_module: ../src/visualization/visualize.py
+data:
+  raw_data_path: ../data/raw/speed_dating_raw_2004.csv
+  
+  

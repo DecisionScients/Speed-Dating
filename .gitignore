@@ -32,6 +32,12 @@ var/
 *.manifest
 *.spec
 
+# No HTML
+/reports/*.html
+
+# No Notes
+/notes
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -79,7 +85,11 @@ target/
 .ipynb_checkpoints/
 
 # exclude data from source control by default
-/data/
+/data/interim/
+/data/processed/
+
+# Exclude test scripts 
+/test/
 
 # Mac OS-specific storage files
 .DS_Store
@@ -95,3 +105,4 @@ target/
 *.Rproj
 .Rproj.user
 .Rhistory
+

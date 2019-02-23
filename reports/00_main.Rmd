@@ -1,0 +1,96 @@
+---
+title: "Speed Dating: Analysis and Predictive Analytics"
+author: "John James jjames@DecisionScients.com"
+date: '`r format(Sys.time(), "%d %B, %Y")`'
+output:
+  rmdformats::readthedown:
+    highlight: kate
+    css: ./css/rmdStyles.css
+    number_sections: false
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+header-includes:
+  - \usepackage{placeins}
+  - \usepackage{booktabs}
+---
+
+```{r libraries, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
+library(extrafont)
+library(kableExtra)
+library(kfigr)
+library(knitr)
+library(png)
+library(reticulate)
+library(rmarkdown)
+```
+
+```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
+figures <- 'reports/figures/'
+options(knitr.table.format = "html")
+options(max.print=100, scipen=999, width = 800)
+knitr::opts_chunk$set(echo=FALSE,
+	             cache=FALSE,
+               prompt=FALSE,
+	             eval = TRUE,
+               tidy=TRUE,
+               root.dir = "..",
+               fig.height = 8,
+               fig.width = 20,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+knitr::opts_knit$set(width=100, figr.prefix = T, figr.link = T)
+knitr::opts_chunk$set(fig.path = figures)
+knitr::knit_hooks$set(inline = function(x) {
+  prettyNum(x, big.mark=",")
+})
+```
+
+```{r setup, echo=FALSE}
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+```
+
+```{python imports}
+import importlib
+import os, sys, inspect
+from os import path
+
+# Add configuration directory to sys.path and import
+config_dir = os.path.join(os.path.dirname(os.path.abspath(
+    inspect.getfile(inspect.currentframe()))), "config")
+sys.path.append(config_dir)
+from config.config import Config
+
+# Load configuration
+config_filepath = "./config/config.yaml"
+c = Config(config_filepath)
+cfg = c.main()
+
+
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from matplotlib.animation import FuncAnimation
+from matplotlib import animation, rc
+import numpy as np
+import pandas as pd
+import pickle
+from sklearn.exceptions import DataConversionWarning
+
+import warnings
+warnings.simplefilter(action='ignore', category=RuntimeWarning)
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=UserWarning)
+warnings.filterwarnings(action='ignore', category=DataConversionWarning)
+warnings.simplefilter(action='ignore', category=DataConversionWarning)
+```
+```{python flags}
+cache=False
+```
+
+
+```{r eda, child = '02_eda.Rmd'}
+```

@@ -1,0 +1,213 @@
+cat_no,category,sel,column,description,type,scale
+1,Admin,x,id,Subject Number within Wave,numeric,
+1,Admin,x,idg,Subject Number within Gender,numeric,
+1,Admin,x,iid,Unique Subject Number,numeric,
+1,Admin,x,order,Order of Date,numeric,
+1,Admin,x,partner,Partner's Id Number the Night of the Event,numeric,
+1,Admin,x,pid,Partner's IID Number,numeric,
+1,Admin,x,round,Round,numeric,
+1,Admin,x,wave,Wave,numeric,
+0,Dependent,y,dec,Decision by Subject,categorical,
+0,Dependent,y,dec_o,Partner Decision,categorical,
+0,Dependent,y,match,Match,categorical,
+2,Setting,x,condtn,Condition,categorical,
+2,Setting,,positin1,Station Number Start,numeric,
+2,Setting,,position,Station Number Met,numeric,
+3,Demographic,x,age,Age of Subject,numeric,
+3,Demographic,d,age_diff,Difference in Age [Subject-Partner],numeric,
+3,Demographic,x,age_o,Age of Partner,numeric,
+3,Demographic,x,from,From,categorical,
+3,Demographic,x,gender,Gender,categorical,
+3,Demographic,x,income,Income 1990 Based on Zipcode Subject,numeric,
+3,Demographic,d,income_o,Income 1990 Based on Zipcode Partner,numeric,
+3,Demographic,d,income_diff,Difference in income (subject-partner),numeric,
+3,Demographic,x,race,Race of Subject,categorical,
+3,Demographic,x,race_o,Race of Partner,categorical,
+3,Demographic,x,zipcode,Zipcode From,categorical,
+4,Undergraduate,x,mn_sat,Median SAT for Undergraduate Institution - Subject,numeric,
+4,Undergraduate,d,mn_sat_o,Median SAT for Undergraduate Institution - Partner,numeric,
+4,Undergraduate,x,tuition,Tuition at Undergraduate Institution - Subject,numeric,
+4,Undergraduate,d,tuition_o,Tuition at Undergraduate Institution - Partner,numeric,
+4,Undergraduate,x,undergra,Undergraduate Institution Attended,categorical,
+4,Undergraduate,d,uni_rank,Undergraduate University Ranked by Pct Median SAT Scores,categorical,
+5,Study,x,field,Field of Subject,categorical,
+5,Study,x,field_cd,Field Code of Subject,numeric,
+5,Study,d,field_cd_o,Field Code of Partner,numeric,
+5,Study,d,same_field,Same field indicator,categorical,
+5,Study,d,field_label,Field Label for Subject,categorical,
+6,Career,x,career,Intended Career,categorical,
+6,Career,x,career_c,Intended Career Code,numeric,
+6,Career,d,career_c_o,Intended Career Code for Partner,numeric,
+6,Career,d,same_career,Same career indicator,categorical,
+6,Career,d,career_label,Intended Career,categorical,
+7,Interests,x,art,Interest in Art,numeric,
+7,Interests,x,clubbing,Interest in Clubbing,numeric,
+7,Interests,x,concerts,Interest in Concerts,numeric,
+7,Interests,x,dining,Interest in Dining,numeric,
+7,Interests,x,exercise,Interest in Exercise,numeric,
+7,Interests,x,gaming,Interest in Gaming,numeric,
+7,Interests,x,hiking,Interest in Hiking,numeric,
+7,Interests,x,movies,Interest in Movies,numeric,
+7,Interests,x,museums,Interest in Museums,numeric,
+7,Interests,x,music,Interest in Music,numeric,
+7,Interests,x,reading,Interest in Reading,numeric,
+7,Interests,x,shopping,Interest in Shopping,numeric,
+7,Interests,x,sports,Interest in Sports,numeric,
+7,Interests,x,theater,Interest in Theater,numeric,
+7,Interests,x,tv,Interest in Tv,numeric,
+7,Interests,x,tvsports,Interest in TV Sports,numeric,
+7,Interests,x,yoga,Interest in Yoga,numeric,
+8,Subject Social Life,x,date,Frequency of Dates,numeric,
+8,Subject Social Life,d,date_label,Frequency of Dates,categorical,
+8,Subject Social Life,x,go_out,Frequency of Going Out,numeric,
+8,Subject Social Life,d,go_out_label,Frequency of Going Out,categorical,
+9,Subject Goals,x,goal,Goal of Participation,numeric,
+9,Subject Goals,d,goal_label,Goal of Participation,categorical,
+10,Subject Expectations,x,exphappy,How Happy Do You Expect to Be?,numeric,
+10,Subject Expectations,x,expnum,Expected Number of Yeses Out of 20,numeric,
+10,Subject Expectations,x,match_es,Number of Estimated Matches Subject Will Get,numeric,
+11,Subject Preferences 1,x,amb1_1,How Important is  Ambition to Subject at Signup,numeric,[0-100]
+11,Subject Preferences 1,x,attr1_1,How Important is  Attraction to Subject at Signup,numeric,[0-100]
+11,Subject Preferences 1,x,fun1_1,How Important is  Funny to Subject at Signup,numeric,[0-100]
+11,Subject Preferences 1,x,intel1_1,How Important is  Intelligence to Subject at Signup,numeric,[0-100]
+11,Subject Preferences 1,x,shar1_1,How Important is  Shared Interests to Subject at Signup,numeric,[0-100]
+11,Subject Preferences 1,x,sinc1_1,How Important is  Sincerity to Subject at Signup,numeric,[0-100]
+11,Subject Preferences 1,x,imprace,Importance Same Race,numeric,[1-10]
+11,Subject Preferences 1,x,imprelig,Importance Same Religion,numeric,[1-10]
+12,Partner Preferences 1,x,pf_o_amb,Partner Preference for Ambition - Time 1,numeric,[0-100]
+12,Partner Preferences 1,x,pf_o_att,Partner Preference for Attractive - Time 1,numeric,[0-100]
+12,Partner Preferences 1,x,pf_o_fun,Partner Preference for Funny - Time 1,numeric,[0-100]
+12,Partner Preferences 1,x,pf_o_int,Partner Preference for Intelligence - Time 1,numeric,[0-100]
+12,Partner Preferences 1,x,pf_o_sha,Partner Preference for Shared Interests - Time 1,numeric,[0-100]
+12,Partner Preferences 1,x,pf_o_sin,Partner Preference for Sincerity - Time 1,numeric,[0-100]
+13,Subject Speculation Others 1,x,amb4_1,How Important is  Ambition to Most Others at Signup,numeric,[1-10]
+13,Subject Speculation Others 1,x,attr4_1,How Important is  Attraction to Most Others at Signup,numeric,[1-10]
+13,Subject Speculation Others 1,x,fun4_1,How Important is  Funny to Most Others at Signup,numeric,[1-10]
+13,Subject Speculation Others 1,x,intel4_1,How Important is  Intelligence to Most Others at Signup,numeric,[1-10]
+13,Subject Speculation Others 1,x,shar4_1,How Important is  Shared Interests to Most Others at Signup,numeric,[1-10]
+13,Subject Speculation Others 1,x,sinc4_1,How Important is  Sincerity to Most Others at Signup,numeric,[1-10]
+14,Subject Speculation Opposite Sex 1,x,amb2_1,How Important is  Ambition to Opposite Sex  at Signup,numeric,mixed
+14,Subject Speculation Opposite Sex 1,x,attr2_1,How Important is  Attraction to Opposite Sex  at Signup,numeric,mixed
+14,Subject Speculation Opposite Sex 1,x,fun2_1,How Important is  Funny to Opposite Sex  at Signup,numeric,mixed
+14,Subject Speculation Opposite Sex 1,x,intel2_1,How Important is  Intelligence to Opposite Sex  at Signup,numeric,mixed
+14,Subject Speculation Opposite Sex 1,x,shar2_1,How Important is  Shared Interests to Opposite Sex  at Signup,numeric,mixed
+14,Subject Speculation Opposite Sex 1,x,sinc2_1,How Important is  Sincerity to Opposite Sex  at Signup,numeric,mixed
+15,Subject Self-Assessment 1,x,amb3_1,How Does Subject Measure Up on Ambition  at Signup,numeric,[1-10]
+15,Subject Self-Assessment 1,x,attr3_1,How Does Subject Measure Up on Attraction  at Signup,numeric,[1-10]
+15,Subject Self-Assessment 1,x,fun3_1,How Does Subject Measure Up on Intelligence  at Signup,numeric,[1-10]
+15,Subject Self-Assessment 1,x,intel3_1,How Does Subject Measure Up on Funny  at Signup,numeric,[1-10]
+15,Subject Self-Assessment 1,x,sinc3_1,How Does Subject Measure Up on Sincerity  at Signup,numeric,[1-10]
+16,Subject Speculation Perception 1,x,amb5_1,Subject's Opinion on How he/she is Perceived w.r.t.  Ambition,numeric,[1-10]
+16,Subject Speculation Perception 1,x,attr5_1,Subject's Opinion on How he/she is Perceived w.r.t.  Attraction,numeric,[1-10]
+16,Subject Speculation Perception 1,x,fun5_1,Subject's Opinion on How he/she is Perceived w.r.t.  Funny,numeric,[1-10]
+16,Subject Speculation Perception 1,x,intel5_1,Subject's Opinion on How he/she is Perceived w.r.t.  Intelligence,numeric,[1-10]
+16,Subject Speculation Perception 1,x,sinc5_1,Subject's Opinion on How he/she is Perceived w.r.t.  Sincerity,numeric,[1-10]
+17,Dyad,x,int_corr,Interests Correlation,numeric,
+17,Dyad,x,met,Has Subject Met Partner Before,numeric,
+17,Dyad,x,met_o,Has Partner met Subject Before,numeric,
+17,Dyad,x,samerace,Same Race,categorical,
+18,Subject Preferences Halfway,x,amb1_s,How Important is  Ambition to Subject Halfway Through Night,numeric,[1-10]
+18,Subject Preferences Halfway,x,attr1_s,How Important is  Attraction to Subject Halfway Through Night,numeric,[1-10]
+18,Subject Preferences Halfway,x,fun1_s,How Important is  Funny to Subject Halfway Through Night,numeric,[1-10]
+18,Subject Preferences Halfway,x,intel1_s,How Important is  Intelligence to Subject Halfway Through Night,numeric,[1-10]
+18,Subject Preferences Halfway,x,shar1_s,How Important is  Shared Interests to Subject Halfway Through Night,numeric,[1-10]
+18,Subject Preferences Halfway,x,sinc1_s,How Important is  Sincerity to Subject Halfway Through Night,numeric,[1-10]
+19,Subject Self-Assessment Halfway,x,amb3_s,Subject Self Rating on Ambition  Halfway Through Night,numeric,[1-10]
+19,Subject Self-Assessment Halfway,x,attr3_s,Subject Self Rating on Attraction  Halfway Through Night,numeric,[1-10]
+19,Subject Self-Assessment Halfway,x,fun3_s,Subject Self Rating on Funny  Halfway Through Night,numeric,[1-10]
+19,Subject Self-Assessment Halfway,x,intel3_s,Subject Self Rating on Intelligence  Halfway Through Night,numeric,[1-10]
+19,Subject Self-Assessment Halfway,x,satis_2,Subject Happiness with People Met   Day After Event,numeric,[1-10]
+19,Subject Self-Assessment Halfway,x,sinc3_s,Subject Self Rating on Sincerity  Halfway Through Night,numeric,[1-10]
+20,Subject Rating of Partner NoE,x,amb,Subject Rating of Partner Ambition  at Night of Event,numeric,[1-10]
+20,Subject Rating of Partner NoE,x,attr,Subject Rating of Partner Attraction  at Night of Event,numeric,[1-10]
+20,Subject Rating of Partner NoE,x,fun,Subject Rating of Partner Funny  at Night of Event,numeric,[1-10]
+20,Subject Rating of Partner NoE,x,intel,Subject Rating of Partner Intelligence  at Night of Event,numeric,[1-10]
+20,Subject Rating of Partner NoE,x,like,Subject Like for Partner at Night of Event,numeric,[1-10]
+20,Subject Rating of Partner NoE,x,shar,Subject Rating of Partner Shared Interests  at Night of Event,numeric,[1-10]
+20,Subject Rating of Partner NoE,x,sinc,Subject Rating of Partner Sincerity  at Night of Event,numeric,[1-10]
+21,Partner Rating of Subject EoE,x,amb_o,Partner Rating of Subject on Ambition - EoE,numeric,[1-10]
+21,Partner Rating of Subject EoE,x,attr_o,Partner Rating of Subject on Attractive - EoE,numeric,[1-10]
+21,Partner Rating of Subject EoE,x,fun_o,Partner Rating of Subject on Funny - EoE,numeric,[1-10]
+21,Partner Rating of Subject EoE,x,intel_o,Partner Rating of Subject on Intelligence - EoE,numeric,[1-10]
+21,Partner Rating of Subject EoE,x,like_o,Like,numeric,
+21,Partner Rating of Subject EoE,x,shar_o,Partner Rating of Subject on Shared Interests - EoE,numeric,[1-10]
+21,Partner Rating of Subject EoE,x,sinc_o,Partner Rating of Subject on Sincerity - EoE,numeric,[1-10]
+22,Subject Speculation re: Probability,x,prob,Probability Partner says Yes,numeric,
+22,Partner Speculation re: Probability,x,prob_o,Probability Subject says Yes,numeric,
+,Subject Feedback on Process,,length,Opinion on Length of Speed Dates,numeric,
+,Subject Feedback on Process,,length_label,Opinion on Length of Speed Dates,categorical,
+,Subject Feedback on Process,,numdat_2,Opinion on Number of Speed Dates,numeric,
+,Subject Feedback on Process,,numdat_2_label,Opinion on Number of Speed Dates,categorical,
+,Subject Reflection on Decision - Day After,,amb7_2,How Important Was Ambition in Your Decision - Day After Event,numeric,[0-100]
+,Subject Reflection on Decision - Day After,,attr7_2,How Important Was Attraction in Your Decision - Day After Event,numeric,[0-100]
+,Subject Reflection on Decision - Day After,,fun7_2,How Important Was Funny in Your Decision - Day After Event,numeric,[0-100]
+,Subject Reflection on Decision - Day After,,intel7_2,How Important Was Intelligence in Your Decision - Day After Event,numeric,[0-100]
+,Subject Reflection on Decision - Day After,,shar7_2,How Important Was Shared Interests in Your Decision - Day After Event,numeric,[0-100]
+,Subject Reflection on Decision - Day After,,sinc7_2,How Important Was Sincerity in Your Decision - Day After Event,numeric,[0-100]
+,Subject Preferences on Day After,,amb1_2,How Important is  Ambition to Subject - Day After Event,numeric,mixed
+,Subject Preferences on Day After,,attr1_2,How Important is  Attraction to Subject - Day After Event,numeric,mixed
+,Subject Preferences on Day After,,fun1_2,How Important is  Funny to Subject - Day After Event,numeric,mixed
+,Subject Preferences on Day After,,intel1_2,How Important is  Intelligence to Subject - Day After Event,numeric,mixed
+,Subject Preferences on Day After,,shar1_2,How Important is  Shared Interests to Subject - Day After Event,numeric,mixed
+,Subject Preferences on Day After,,sinc1_2,How Important is  Sincerity to Subject - Day After Event,numeric,mixed
+,Subject Speculation Others on Day After,,amb4_2,How Important is  Ambition to Most People - Day After Event,numeric,[0-100]
+,Subject Speculation Others on Day After,,attr4_2,How Important is  Attraction to Most People - Day After Event,numeric,[0-100]
+,Subject Speculation Others on Day After,,fun4_2,How Important is  Funny to Most People - Day After Event,numeric,[0-100]
+,Subject Speculation Others on Day After,,intel4_2,How Important is  Intelligence to Most People - Day After Event,numeric,[0-100]
+,Subject Speculation Others on Day After,,shar4_2,How Important is  Shared Interests to Most People - Day After Event,numeric,[0-100]
+,Subject Speculation Others on Day After,,sinc4_2,How Important is  Sincerity to Most People - Day After Event,numeric,[0-100]
+,Subject Speculation Opposite Sex on Day After,,amb2_2,How Important is Ambition to Opposite Sex  - Day After Event,numeric,[0-100]
+,Subject Speculation Opposite Sex on Day After,,attr2_2,How Important is Attraction to Opposite Sex  - Day After Event,numeric,[0-100]
+,Subject Speculation Opposite Sex on Day After,,fun2_2,How Important is Funny to Opposite Sex  - Day After Event,numeric,[0-100]
+,Subject Speculation Opposite Sex on Day After,,intel2_2,How Important is Intelligence to Opposite Sex  - Day After Event,numeric,[0-100]
+,Subject Speculation Opposite Sex on Day After,,shar2_2,How Important is Shared Interests to Opposite Sex  - Day After Event,numeric,[0-100]
+,Subject Speculation Opposite Sex on Day After,,sinc2_2,How Important is Sincerity to Opposite Sex  - Day After Event,numeric,[0-100]
+,Subject Self-Assessment Day After,,amb3_2,How Subject Measures Up to Ambition Preferences of Opposite Sex - Day After Event,numeric,[1-10]
+,Subject Self-Assessment Day After,,attr3_2,How Subject Measures Up to Attraction Preferences of Opposite Sex - Day After Event,numeric,[1-10]
+,Subject Self-Assessment Day After,,fun3_2,How Subject Measures Up to Funny Preferences of Opposite Sex - Day After Event,numeric,[1-10]
+,Subject Self-Assessment Day After,,intel3_2,How Subject Measures Up to Intelligence Preferences of Opposite Sex - Day After Event,numeric,[1-10]
+,Subject Self-Assessment Day After,,sinc3_2,How Subject Measures Up to Sincerity Preferences of Opposite Sex - Day After Event,numeric,[1-10]
+,Subject Speculation re: Perception Day After,,amb5_2,How Subject Thinks he/she is Perceived w.r.t. Ambition By Others - Day After Event,numeric,[1-10]
+,Subject Speculation re: Perception Day After,,attr5_2,How Subject Thinks he/she is Perceived w.r.t. Attraction By Others - Day After Event,numeric,[1-10]
+,Subject Speculation re: Perception Day After,,fun5_2,How Subject Thinks he/she is Perceived w.r.t. Funny By Others - Day After Event,numeric,[1-10]
+,Subject Speculation re: Perception Day After,,intel5_2,How Subject Thinks he/she is Perceived w.r.t. Intelligence By Others - Day After Event,numeric,[1-10]
+,Subject Speculation re: Perception Day After,,sinc5_2,How Subject Thinks he/she is Perceived w.r.t. Sincerity By Others - Day After Event,numeric,[1-10]
+,Subject Preferences Weeks After,,amb1_3,Importance of Ambition to Subject -3-4 Weeks After ,numeric,[0-100]
+,Subject Speculation Opposite Sex' Preferences Weeks After,,amb2_3,How Important is Ambition to Opposite Sex  -3-4 Weeks After ,numeric,[1-10]
+,Subject Self-Assessment Weeks After,,amb3_3,Subject Self Rating on Ambition  -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation Other's Preferences Weeks After,,amb4_3,How Important is Ambition to Most other People -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation on Perceptions Weeks After,,amb5_3,Subject's Opinion on Perception of Others w.r.t. Ambition  -3-4 Weeks After ,numeric,[1-10]
+,Subject Reflection on Decision Weeks After,,amb7_3,Importance of Ambition to Subject's Decision at Night of Event - 3-4 Weeks After ,numeric,[0-100]
+,Subject Preferences Weeks After,,attr1_3,Importance of Attraction to Subject -3-4 Weeks After ,numeric,[0-100]
+,Subject Speculation Opposite Sex' Preferences Weeks After,,attr2_3,How Important is Attraction to Opposite Sex  -3-4 Weeks After ,numeric,[1-10]
+,Subject Self-Assessment Weeks After,,attr3_3,Subject Self Rating on Attraction  -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation Other's Preferences Weeks After,,attr4_3,How Important is Attraction to Most other People -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation on Perceptions Weeks After,,attr5_3,Subject's Opinion on Perception of Others w.r.t. Attraction  -3-4 Weeks After ,numeric,[1-10]
+,Subject Reflection on Decision Weeks After,,attr7_3,Importance of Attraction to Subject's Decision at Night of Event - 3-4 Weeks After ,numeric,[0-100]
+,Follow Up,,date_3,Has Subject Been on Any Dates with Matches - 3-4 Weeks After,numeric,
+,Subject Preferences Weeks After,,fun1_3,Importance of Funny to Subject -3-4 Weeks After ,numeric,[0-100]
+,Subject Speculation Opposite Sex' Preferences Weeks After,,fun2_3,How Important is Funny to Opposite Sex  -3-4 Weeks After ,numeric,[1-10]
+,Subject Self-Assessment Weeks After,,fun3_3,Subject Self Rating on Funny  -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation Other's Preferences Weeks After,,fun4_3,How Important is Funny to Most other People -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation on Perceptions Weeks After,,fun5_3,Subject's Opinion on Perception of Others w.r.t. Funny  -3-4 Weeks After ,numeric,[1-10]
+,Subject Reflection on Decision Weeks After,,fun7_3,Importance of Funny to Subject's Decision at Night of Event - 3-4 Weeks After ,numeric,[0-100]
+,Subject Preferences Weeks After,,intel1_3,Importance of Intelligence to Subject -3-4 Weeks After ,numeric,[0-100]
+,Subject Speculation Opposite Sex' Preferences Weeks After,,intel2_3,How Important is Intelligence to Opposite Sex  -3-4 Weeks After ,numeric,[1-10]
+,Subject Self-Assessment Weeks After,,intel3_3,Subject Self Rating on Intelligence  -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation Other's Preferences Weeks After,,intel4_3,How Important is Intelligence to Most other People -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation on Perceptions Weeks After,,intel5_3,Subject's Opinion on Perception of Others w.r.t. Intelligence  -3-4 Weeks After ,numeric,[1-10]
+,Subject Reflection on Decision Weeks After,,intel7_3,Importance of Intelligence to Subject's Decision at Night of Event - 3-4 Weeks After ,numeric,[0-100]
+,Follow Up,,num_in_3,Number of Dates with Matches - 3-4 Weeks After,numeric,
+,Follow Up,,numdat_3,Number of Matches Subject has Dated   -3-4 Weeks After ,numeric,
+,Subject Preferences Weeks After,,shar1_3,Importance of Shared Interests to Subject -3-4 Weeks After ,numeric,[0-100]
+,Subject Speculation Opposite Sex' Preferences Weeks After,,shar2_3,How Important is Shared Interests to Opposite Sex  -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation Other's Preferences Weeks After,,shar4_3,How Important is Shared Interests to Most other People -3-4 Weeks After ,numeric,[1-10]
+,Subject Reflection on Decision Weeks After,,shar7_3,Importance of Shared Interests to Subject's Decision at Night of Event - 3-4 Weeks After ,numeric,[0-100]
+,Subject Preferences Weeks After,,sinc1_3,Importance of Sincerity to Subject -3-4 Weeks After ,numeric,[0-100]
+,Subject Speculation Opposite Sex' Preferences Weeks After,,sinc2_3,How Important is Sincerity to Opposite Sex  -3-4 Weeks After ,numeric,[1-10]
+,Subject Self-Assessment Weeks After,,sinc3_3,Subject Self Rating on Sincerity  -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation Other's Preferences Weeks After,,sinc4_3,How Important is Sincerity to Most other People -3-4 Weeks After ,numeric,[1-10]
+,Subject Speculation on Perceptions Weeks After,,sinc5_3,Subject's Opinion on Perception of Others w.r.t. Sincerity  -3-4 Weeks After ,numeric,[1-10]
+,Subject Reflection on Decision Weeks After,,sinc7_3,Importance of Sincerity to Subject's Decision at Night of Event - 3-4 Weeks After ,numeric,[0-100]
+,Follow Up,,them_cal,Number of Partners that Contacted Subject   -3-4 Weeks After ,numeric,
+,Follow Up,,you_call,Number of Partners Contacted by Subject   -3-4 Weeks After ,numeric,
